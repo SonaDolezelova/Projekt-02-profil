@@ -5,9 +5,9 @@ html { box-sizing: border-box; }
 
 /*
 BARVY
-czechitas                 #b92e81
-šedé pozadí stránky       #bdc3c7
-tmavé pozadí pod textem   #31363b
+czechitas                 #b92e81 ANO
+šedé pozadí stránky       #bdc3c7 ANO
+tmavé pozadí pod textem   #31363b ANO
 dělítka mezi tlačítky     #3f464d
 tlačítko portfolio        #e74c3c
 tlačítko facebook         #3b5998
@@ -17,5 +17,71 @@ tlačítko twitter          #1da1f2
 
 body {
   background-color: #bdc3c7;
+
+  }
+
+.obsah {
+  background-color: #31363b; 
+  }
+
+/* font Montserrat pro nadpis H1 "Jana Czechita" */
+h1 {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+    color: white;
+  }
+
+
+/* font Source Sans Pro .obsah p */
+.obsah p {
+  width: 727px;
+  color: #bdc3c7;
+  display: inline-block;
+  font-family: "Source Sans 3", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
 }
 
+/* obrázek se třídou .logo 
+kulaté , barva na pozadí*/
+.hlavicka{
+  position: relative;
+  margin-bottom: -5px;
+  }
+
+/* z-index k .logo*/
+.logo {
+  border-radius: 50%;
+  background-color: #b92e81;
+  position: absolute;
+  left: 39%;
+  bottom: -5%;
+}
+
+/* .obsah zarovnat nalevo, zmenšit tmavě šedý box, 
+aby nebyl po celé stránce, ale stejně s .foto*/
+.obsah {
+  width: 727px;
+  padding: 30px 20px 30px 20px;
+
+}
+  
+  /* .odkazy, */
+.odkazy {
+  position: relative;
+  background-color: #31363b;
+  width: 727px;
+}
+.portfolio {
+  position: absolute;
+
+}
+
+
+ul li a {
+    color: white;
+    text-decoration: none;
+  }
