@@ -17,57 +17,61 @@ tlačítko twitter          #1da1f2
 
 body {
   background-color: #bdc3c7;
-  box-shadow: grey 4px 6px 20px;
+  font-family: "Source Sans 3", sans-serif;
   }
 
-.obsah {
-  background-color: #31363b;
+.profil {
+    width: 360px;
+    margin: auto;
+    background-color: #31363b;
+    box-shadow: 10px 5px 5px grey;
   }
+
+
 /* font Montserrat pro nadpis H1 "Jana Czechita" */
 h1 {
     font-family: "Montserrat", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: <weight>;
+    font-weight: 200;
     font-style: normal;
     color: white;
   }
+/* pixely od oka, procenta - od rodiče; relativní jednotky VW  
+viewport width, VH viewport height - */
 
-
+a {
+  font-family: "Montserrat";
+}
 /* font Source Sans Pro .obsah p */
 .obsah p, 
 .odkazy {
-  width: 50%;
   color: #bdc3c7;
-  display: inline-block;
-  font-family: "Source Sans 3", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: <weight>;
+  font-weight: 300;
   font-style: normal;
 }
 
 /* obrázek se třídou .logo 
 kulaté , barva na pozadí*/
-.foto {
-  width: 70%;
-}
+
 .hlavicka{
   position: relative;
   margin-bottom: -5px;
   }
 
+  .foto {
+    width: 100%;
+  }
 
 .logo {
   border-radius: 50%;
   background-color: #b92e81;
   position: absolute;
-  left: 50%;
+  right: 15%;
   bottom: -5%;
 }
 
 /* .obsah zarovnat nalevo, zmenšit tmavě šedý box, 
 aby nebyl po celé stránce, ale stejně s .foto*/
 .obsah {
-  width: 70%;
   padding: 30px 20px 30px 20px;
 
 }
@@ -75,51 +79,50 @@ aby nebyl po celé stránce, ale stejně s .foto*/
   /* .odkazy, */
 .odkazy {
   background-color: #31363b;
-  width: 70%;
-  height: 50px;
-  margin-top: 2px;
+  /*display: inline-block;*/
+  text-align: center;
+  padding: 0;
+  margin: 0;
 }
+/* border-block - horni a dolni hranice*/
 .portfolio {
-  position: relative;
-  left: 15%;
-  border-bottom: 3px solid #3f464d;
+  width: 100%;
+  margin: 0;
+  padding: 15px auto;
+  border-block: 3px solid #3f464d;
 }
 
 .portfolio:hover {
-  left: 20px;
   background-color: #e74c3c;
 }
 
 .facebook {
-  position: relative;
-  top: 50%;
-  right: 20%;
+  width: 48%;
 }
 
 .facebook:hover {
-  left: 20px;
   background-color: #3b5998;
 }
 
 .twitter {
-  position: relative;
-  top: 50%;
-  left: 10%;
+  width: 48%;
   border-left: 3px solid #3f464d;
 }
 
 .twitter:hover {
-  left: 20px;
   background-color: #1da1f2;
 }
 
 /* nefunguje text-tranform: uppertext; pro kapitálky*/
 
-ul li {
+li {
   display: inline-block;
+  padding-block: 15px;
 }
 
-ul li a {
+li a {
     color: #bdc3c7;
     text-decoration: none;
+    display: inline-block;
+    text-transform: uppercase;
   }
